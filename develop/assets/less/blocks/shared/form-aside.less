@@ -1,0 +1,53 @@
+.form-aside {
+
+}
+
+	.form-aside__title {
+		text-transform: uppercase;
+		color: @crimson;
+		margin-bottom: 6px;
+	}
+
+	.form-aside__required {
+		font-family: 'latolight';
+		color: #a3a3a3;
+	}
+
+	.form-aside__input {
+		height: 40px;
+		width: 100%;
+	}
+
+	.form-aside__textarea {
+		height: 140px;
+		width: 100%;
+		resize: none;
+		padding: 12px 15px;
+  		margin-top: 2px;
+	}
+
+	.form-aside__button{
+		font-size: 16px;
+	}
+
+		.form-aside__input,
+		.dropdown-button, {
+			padding: 0 15px;
+			margin: 2px 0 0;
+		}
+
+		.js-validText {
+			display: inline-block;
+			padding-bottom: 5px;
+		}
+
+		.has-error  {
+			.js-validText {
+				color: @crimson;
+			}
+
+			.input-control,
+			.dropdown-button {
+				border-color: @crimson;
+			}
+		}

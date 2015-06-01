@@ -1,0 +1,25 @@
+.form-search-question {
+	font-size: 0;
+	margin-bottom: 20px;
+}
+
+	.search-question__input {
+		height: 48px;
+		width: calc(~"100% - 48px");
+		float: left;
+		padding: 0 19px;
+	}
+
+	.search-question__button {
+		width: 48px;
+		height: 48px;
+		background-color: @normal-button;
+		border: none;
+		outline: none;
+		.sprite {
+			margin: auto;
+		}
+		&:hover {
+			background-color: @hover-button;
+		}
+	}

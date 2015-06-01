@@ -1,0 +1,124 @@
+.catalog-menu {
+	font-size: 0;
+	margin-bottom: 18px;
+}
+	.catalog-menu__link {
+		display: inline-block;
+		margin-left: -1px;
+		vertical-align: top;
+		width: 14.38%;
+		height: 142px;
+		background-color: #f3f3f3;
+		text-decoration: none;
+		position: relative;
+		border: 1px solid  #aeaeae;
+
+		&:hover {
+			border-color: #cf89a7;
+			z-index: 2;
+
+			.catalog-menu__text span {
+				color: @crimson;
+			}
+		}
+
+		&.active {
+			border-color: @crimson;
+			background-color: @crimson;
+			
+			.catalog-menu__text span {
+				color: #fff;
+			}			
+		}
+
+		&.active, &:hover {
+			.catalog-menu__icon:before {
+				background-color: #e3bece;
+			}
+
+			.sprite-all-product-g {
+				 background-position: -10px -229px;
+			}
+			.sprite-fallout-g {
+				background-position: -10px -1101px;
+			}
+			.sprite-stronger-g {
+				background-position: -10px -2718px;
+			}
+			.sprite-stimul-g {
+				background-position: -10px -2525px;
+			}
+			.sprite-feed-g {background-position: -10px -1329px;}
+			.sprite-grow-g {background-position: -10px -1546px;}
+			.sprite-set-g {background-position: -10px -2332px;}
+		}
+	}
+
+	.catalog-menu__icon {
+		margin-top: 13px;
+		position: relative;
+		height: 85px;
+		.sprite {
+			margin: auto;
+			position: relative;
+		}
+
+		&:before {
+			position: absolute;
+			display: inline-block;
+			content: '';
+			height: 58px;
+			width: 58px;
+			background-color: #fff;
+			border-radius: 50%;
+			z-index: 0;
+
+			top: 50%;
+			left: 50%;
+			margin-top: -29px;
+			margin-left: -29px;
+			transition: all 0.3s ease;
+		}
+
+		.sprite-all-product-g {
+			left: 7px;
+		}
+
+		.sprite-fallout-g {
+			right: 7px;
+		}
+
+		.sprite-feed-g{
+			top: 19px;
+  		left: 4px;
+		}
+		.sprite-grow-g {
+			top: 5px;
+  		right: 1px;
+		}
+		.sprite-set-g {
+			top: 5px;
+		}
+	}
+	
+
+		.catalog-menu__text {
+			height: 40px;
+			width: 100%;
+			position: absolute;
+			bottom: 4px;
+
+			span{
+				padding: 0 7px;
+				text-align: center;
+				color: @dark-gray;
+				font-size: 14px;
+				line-height: 15px;
+				display: inline-block;
+				width: 100%;
+				position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			}
+		}

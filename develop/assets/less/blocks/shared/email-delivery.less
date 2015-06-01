@@ -1,0 +1,72 @@
+.email-delivery {
+	background-color: #fff;
+	padding: 15px 19px 25px;
+	h4 {
+		text-transform: uppercase;
+		color: @crimson;
+		span {
+			font-family: 'latoregular';
+			color: @text-color;
+		}
+	}
+}
+
+	.email-delivery__text {
+		position: relative;
+		width: 166px;
+		margin-bottom: 15px;
+		&:after {
+			content: '';
+			width: 76px;
+			height: 48px;
+			background-image: url(/assets/images/icons/delivery.png);
+			position: absolute;
+			right: -43px;
+			top: 15px;
+		}
+	}
+	.email-delivery__form {
+
+	}
+
+	.email-delivery__input {
+		width: 100%;
+		height: 35px;
+		margin-bottom: 5px;
+		padding: 0 12px;
+	}
+
+	.email-delivery__submit {
+		width: 70%;
+		height: 35px;
+		color: #fff;
+		background-color: @normal-button;
+		border: none;
+		transition: background-color 0.3s ease;
+
+		&:after {
+			font-family: "fontawesomelefticon";
+			content: '\e800';
+			margin-left: 14%;
+		}
+
+		&:hover {
+			background-color: @hover-button;
+		}
+	}
+
+	.validText {
+		margin-top: 6px;
+	}
+	.has-error{
+		.email-delivery__input {
+			border-color: @crimson;
+		}
+		.validText {
+			color: @crimson;
+		}
+	} 
+
+	.success .validText {
+		color: @green;
+	}

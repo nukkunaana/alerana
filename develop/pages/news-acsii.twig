@@ -1,0 +1,167 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/news-acsii.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-news-acsii">
+	<div class="wrap">
+		<div class="row">
+
+		{# submenu #}
+			<div class="col-sm-3 page-submenu page-news-acsii__submenu">
+				<nav>
+					<a href="" class="submenu__link active">
+						<p class="icon">
+							<i class="sprite sprite-news"></i>
+						</p>
+						<span>
+							Новости
+						</span>
+					</a>
+					<a href="" class="submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-acsii"></i>
+						</p>
+						<span>
+							Акции
+						</span>
+					</a>
+				</nav>
+
+				<div class="email-delivery">
+					<h4>
+						<span>Email</span> рассылка
+					</h4>
+					<p class="email-delivery__text">
+						Получайте новые релизы и акции прямо <br>
+						на почтовый ящик.
+					</p>
+					<form action="" class="email-delivery__form">
+						<input class="email-delivery__input input-mail input-control" type="text" placeholder="E-mail">
+						<p class="js-validText validText"></p>
+						<button class="email-delivery__submit">Подписаться</button>			
+					</form>
+				</div>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+				<article class="article">
+					<img class="article__img" src="/assets/images/bg/article1.jpg" alt="">
+					<p class="article__time">
+						22 ноября 2015
+					</p>
+					<h4 class="crimson article__title">
+						Новый раздел и новые возможности Клуба «Вертекс»
+					</h4>
+					<p class="article__text">
+						Этим летом наш Клуб открывает новый уникальный раздел – блоговая площадка «Дневники Клуба «ВЕРТЕКС». Теперь каждый участник может завести свой личный дневник-блог 
+					</p>
+					<a href="news-acsii_internal.html" class="article__link">
+						Читать подробнее
+					</a>
+				</article>
+				<article class="article">
+					<img class="article__img" src="/assets/images/bg/article.jpg" alt="">
+					<p class="article__time">
+						22 ноября 2015
+					</p>
+					<h4 class="crimson article__title">
+						Новый раздел и новые возможности Клуба «Вертекс»
+					</h4>
+					<p class="article__text">
+						Этим летом наш Клуб открывает новый уникальный раздел – блоговая площадка «Дневники Клуба «ВЕРТЕКС». Теперь каждый участник может завести свой личный дневник-блог 
+					</p>
+					<a href="" class="article__link">
+						Читать подробнее
+					</a>
+				</article>
+				<article class="article">
+					<img class="article__img" src="/assets/images/bg/article2.jpg" alt="">
+					<p class="article__time">
+						22 ноября 2015
+					</p>
+					<h4 class="crimson article__title">
+						Новый раздел и новые возможности Клуба «Вертекс»
+					</h4>
+					<p class="article__text">
+						Этим летом наш Клуб открывает новый уникальный раздел – блоговая площадка «Дневники Клуба «ВЕРТЕКС». Теперь каждый участник может завести свой личный дневник-блог 
+					</p>
+					<a href="" class="article__link">
+						Читать подробнее
+					</a>
+				</article>
+				<article class="article">
+					<img class="article__img" src="/assets/images/bg/article3.jpg" alt="">
+					<p class="article__time">
+						22 ноября 2015
+					</p>
+					<h4 class="crimson article__title">
+						Новый раздел и новые возможности Клуба «Вертекс»
+					</h4>
+					<p class="article__text">
+						Этим летом наш Клуб открывает новый уникальный раздел – блоговая площадка «Дневники Клуба «ВЕРТЕКС». Теперь каждый участник может завести свой личный дневник-блог 
+					</p>
+					<a href="" class="article__link">
+						Читать подробнее
+					</a>
+				</article>
+				
+
+				<div class="paginator">
+					<div class="paginator__prev dib">
+						<a href="" class="paginator__link">
+							Предыдущая
+						</a>
+					</div>
+					
+					<div class="paginator__number dib">
+						<a href="" class="paginator__link">1</a>
+						<a href="" class="paginator__link active">2</a>
+						<a href="" class="paginator__link">3</a>
+						<p class="dib">...</p>
+						<a href="" class="paginator__link">19</a>
+						<a href="" class="paginator__link">20</a>
+						<a href="" class="paginator__link">21</a>
+					</div>
+
+					<div class="paginator__next dib">
+						<a href="" class="paginator__link">
+							Следующая
+						</a>
+					</div>
+				</div>
+
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

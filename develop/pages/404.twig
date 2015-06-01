@@ -1,0 +1,22 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+
+
+{% block content %}
+<div class="js-page page page-404">
+	<div class="wrap">
+		<p class="page-404__notfound">
+			<span class="notfound__number">404</span>
+			<span class="notfound__text">Страница не найдена</span>
+		</p>
+		<p class="page-404__wassap">
+			<span class="page-404__sorry">Простите, но у нас возникли проблемы с поиском страницы, которую вы запрашиваете.</span>
+			<a href="index.html"  class="page-404__link">
+				Вернитесь на главную
+			</a>
+		</p>
+
+	</div>
+</div>
+{% endblock %}

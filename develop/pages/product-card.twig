@@ -1,0 +1,292 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/product-card.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-product-card">
+	<div class="wrap">
+		<h1 class="page-product-card__title">
+			Спрей для наружнего применения 2% ALERANA
+		</h1>
+		<div class="row">
+
+			{# asside #}
+			<div class="col-sm-3">
+				<div class="js-aside-img">
+					<aside class="product-card__img">
+						<a href="/assets/images/product-card/popup-product.jpg" class="fancybox">
+							<img src="/assets/images/product-card/product.jpg" alt="">
+							<span class="hover">
+								<i class="sprite sprite-seefoto-p"></i>
+							</span>
+						</a>
+					</aside>
+					<a href="map.html" class="aside-button">
+						<p class="icon">
+							<i class="sprite sprite-where"></i>
+						</p>
+						<span class="aside-button__text">
+							Где купить продукт?
+						</span>
+					</a>	
+					<a href="" class="aside-button">
+						<p class="icon">
+							<i class="sprite sprite-b-diagnostics"></i>
+						</p>
+						<span class="aside-button__text">
+							Диагностика волос
+						</span>
+					</a>
+				</div>
+
+				<div class="js-aside-recall">
+					<aside class="aside">
+						<form action="" class="js-form-aside  form-aside  form-aside--recall">
+							<h4 class="form-aside__title">
+								Оставить отзыв
+							</h4>
+							<p class="form-aside__required">
+								Все поля обязательны для заполнения
+							</p>
+							<div>
+								<input class="form-aside__input input-control input-name" type="text" placeholder="Имя">
+								<span class="js-validText"></span>
+							</div>
+							<div>
+								<input class="form-aside__input input-control input-mail" type="text" placeholder="E-mail">
+								<span class="js-validText"></span>
+							</div>
+							<div>
+								<textarea class="form-aside__textarea input-control" name="" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+								<span class="js-validText"></span>
+							</div>
+							<button class="aside-button form-aside__button">Отправить</button>
+						</form>
+						<a href="popup-message.html" class="js-popup-message"></a>
+					</aside>
+				</div>
+							
+			</div>
+			{# end asside #}
+			
+			{# content #}
+			<div class="col-sm-9">
+				
+				
+				<div id="tabs" class="tabs">
+				  <ul class="tabs-list">
+				    <li class="tabs-item"><a href="#tab-1"><span>Описание</span></a></li>
+				    <li class="tabs-item"><a href="#tab-2"><span>Клинические исследования</span></a></li>
+				    <li class="tabs-item"><a href="#tab-3"><span>Программы ухода</span></a></li>
+				    <li class="tabs-item js-tabs-item-recall"><a href="#tab-4"><span>Отзывы</span></a></li>
+				    <li class="tabs-item"><a href="#tab-5"><span>Доп-ая вкаладка 1</span></a></li>
+				    <li class="tabs-item"><a href="#tab-6"><span>Доп-ая вкаладка 2</span></a></li>
+				  </ul>
+				  <div id="tab-1">
+			  		<div class="page-content">
+			  			<div class="page-text">
+						    <h4>
+						    	Рекомендован для лечения интенсивного выпадения волос у женщин  <br>
+						    	и мужчин и для стимуляции роста волос
+						    </h4>
+						    <ul>
+						    	<li>
+						    		Останавливает интенсивное выпадение волос
+						    	</li>
+						    	<li>
+						    		Стимулирует рост новых волос
+						    	</li>
+						    	<li>
+						    		Восстанавливает нормальное развитие волосяных фолликулов
+						    	</li>
+						    	<li>
+						    		Увеличивает продолжительность фазы активного роста волоса
+						    	</li>
+						    	<li>
+						    		Способствует увеличению толщины волоса
+						    	</li>
+						    	<li>
+						    		Повышает густоту волос
+						    	</li>
+						    	<li>
+						    		Препарат эффективен при лечении андрогенной алопеции
+						    	</li>
+						    </ul>
+						    <b>
+						    	Клинически доказано:
+						    </b>
+						    <p>
+						    	Повышенное выпадение волос прекращается уже через 6 недель лечения в 87% случаев*
+						    </p>
+						    <i class="text-note">
+						    	* Открытое несравнительное исследование по оценке эффективности, безопасности и переносимости лекарственного препарата ALERANA (2% и 5% раствор миноксидила), Военно-медицинская академия имени С.М. Кирова, 2012 г. (6 недель/4 месяца)
+						    </i>
+
+						    <br>
+						    <br>
+
+						    <h4>
+						    	Активный компонент и механизм действия
+						    </h4>
+						    <p>
+						    	Активный компонент — миноксидил 2%. <br>
+								Активный компонент спреев ALERANA,  миноксидил, действует непосредственно на волосяные фолликулы. Миноксидил изменяет сосудистый тонус, улучшает питание и укрепляет корни волос за счет усиления притока крови к коже головы. Улучшение кровообращения вокруг волосяного фолликула позволяет дать жизнь новому здоровому волосу. Таким образом,  миноксидил стимулирует переход волосяных фолликулов в активную фазу роста.
+						    </p>
+						    <img src="/assets/images/product-card/text-img.jpg" alt="" class="page-text__sub-img">
+						    <p class="page-text__quotes">
+								<b>Миноксидил:</b> изменяет воздействие андрогенов на волосяные мешочки. И уменьшает образование 5-альфа-дегидротестостерона, играющегосущественную роль при выпадении волос, что делает миноксидил эффективным, в том числе, при лечении андрогенной алопеции.
+							</p>
+
+							<h4>
+								Способ применения
+							</h4>
+							<p>
+								Наружно. Независимо от размера обрабатываемого участка следует наносить 1 мл раствора с помощью дозатора (7 нажатий) 2 раза в день на пораженные участки волосистой части головы, начиная с центра пораженной зоны. После применения необходимо вымыть руки. Суммарная суточная доза не должна превышать 2 мл. Пациентам, у которых при применении 2%-го раствора не наблюдается косметически удовлетворительного роста волос, и пациентам, для которых желателен более быстрый рост волос, можно использовать 5%-ый раствор. Не требует смывания.
+							</p>
+
+							<br>
+
+							<h4>
+								Противопоказания
+							</h4>
+							<ul>
+								<li>
+									Повышенная чувствительность к миноксидилу или другим компонентам препарата 
+								</li>
+								<li>
+									Возраст младше 18 лет
+								</li>
+								<li>
+									Нарушение целостности кожных покровов, дерматозы волосистой части головы
+								</li>
+								<li>
+									 Одновременное применение других лекарственных средств на коже головы
+								</li>
+							</ul>
+
+							<br>
+							
+							<h4>
+								С осторожностью
+							</h4>
+							<p>
+								Пожилой возраст - старше 65 лет (при местном применении)
+							</p>
+
+							<br>
+							
+							<b>
+								Применение при беременности и кормлении грудью: 
+							</b>
+							<p>
+								Препарат АЛЕРАНА не следует применять во время беременности и лактации.
+							</p>
+
+							<br>
+							
+							<h4>
+								Упаковка
+							</h4>
+							<p>
+								Флакон, 60 мл 
+							</p>
+
+							<p class="text-warning">
+								СПРЕЙ  ДЛЯ  НАРУЖНОГО  ПРИМЕНЕНИЯ  ALERANA®  ЯВЛЯЕТСЯ ЛЕКАРСТВЕННЫМ  СРЕДСТВОМ.  Р  <span>No</span> ЛП-000224.  <br>
+								ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ.  ОЗНАКОМЬТЕСЬ  С  ИНСТРУКЦИЕЙ.
+							</p>
+
+					  	</div>
+					</div>
+				  </div>
+				  <div id="tab-2">
+				  	<div class="page-content">
+			  			<div class="page-text">
+				    		222222222222 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				    	</div>
+				    </div>
+				  </div>
+				  <div id="tab-3">
+				    <div class="page-content">
+			  			<div class="page-text">
+				    		333333333333 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				    	</div>
+				    </div>
+				  </div>
+
+				  <div id="tab-4">
+				    <div class="recall-product">
+						<p class="article__time">
+							22 ноября 2015 в 12:45
+						</p>
+						<h4 class="recall__messenger-name">
+							Лилия Наилевна
+						</h4>
+						<p>
+							Добрый день!!! В 2012 г., после очень серьезного облучения у меня появились участки на голове с 5-р монету ,где волос не было АБСОЛЮТНО. У меня волос очень густой и длинна до поясницы... А стал жидким ,да еще эти залысины..... как только выписали ,я пошла в аптеку. НЕ знаю как объяснить, но интуиция у меня просто на высшем уровне.... взгляд упал на лосьон для женщин о ALERANA.... ВТИРАЛА добросовестно 3 раза в день, честно,дорогие читатели,волосы *пошли*..... они ожили, после облучения я не верила что что-то мне поможет....дорогие производители, мое  сердце отдано вам,спасибо за качество и красоту.забыла сказать ,что с лосьоном и шампунь для сухих использовала.... 
+						</p>						
+					</div>
+
+					<div class="recall-product">
+						<p class="article__time">
+							22 ноября 2015 в 12:45
+						</p>
+						<h4 class="recall__messenger-name">
+							Uniq One
+						</h4>
+						<p>
+							Мой отзыв об алерана спрей 2%. Осенью минувшего года я узнала о своей неприятной болезни, у меня андрогенетическая алопеция. Каждую девушку, которую постиг этот недуг до глубины души потрясает данная новость. Но я не растерялась, и начала действовать. Купила спрей алерана ( по совету трихолога) и каждый день, 2 раза в сутки начала брызгать на проблемные места. Сначала был дикий волосопад, но я была готова к этому. Результат не заставил себя ждать. Заросли все виски и вся макушка. Качество волос намного улучшилось, стали толстыми и плотными
+						</p>						
+					</div>
+				  </div>
+
+				  <div id="tab-5">
+				    <div class="page-content">
+			  			<div class="page-text">
+				    		5555555555555 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				    	</div>
+				    </div>
+				  </div>
+
+				  <div id="tab-6">
+				    <div class="page-content">
+			  			<div class="page-text">
+				    		666666666666 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				    	</div>
+				    </div>
+				  </div>
+				</div>
+
+
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

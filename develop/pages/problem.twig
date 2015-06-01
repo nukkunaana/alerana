@@ -1,0 +1,234 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/problem.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-problem">
+	<div class="wrap">
+		<div class="row">
+
+		{# submenu #}
+			<div class="col-sm-3 page-submenu page-problem__submenu">
+				<nav>
+					<a href="problem.html" class="active problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-about-g"></i>
+						</p>
+						<span>
+							О проблеме
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-clinik-g"></i>
+						</p>
+						<span>
+							Клинические исследования
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-p-fallout-g"></i>
+						</p>
+						<span>
+							Выпадение волос <br> и меры по его предотвращению 
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-recover-g"></i>
+						</p>
+						<span>
+							Восстановление волос, правильный уход, стимулирование роста
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-season-g"></i>
+						</p>
+						<span>
+							Сезонные особенности роста и выпадения
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-dandruff-g"></i>
+						</p>
+						<span>
+							Избавляемся <br> от перхоти
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-packing-g"></i>
+						</p>
+						<span>
+							Делаем правильно укладки и другие манипуляции
+						</span>
+					</a>
+					<a href="" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-eyelashes-g"></i>
+						</p>
+						<span>
+							Укрепление <br> и стимулирование роста ресниц
+						</span>
+					</a>
+					<a href="facts-mifs.html" class="problem-submenu__link submenu__link">
+						<p class="icon">
+							<i class="sprite sprite-mifs-g"></i>
+						</p>
+						<span>
+							Интересные факты <br> и мифы о волосах
+						</span>
+					</a>
+				</nav>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+				<div class="page-content">
+					<div class="page-text">
+						<img src="/assets/images/bg/problm-img.jpg" alt="" class="page-text__lead-img">
+						<h4>
+							О проблеме выпадения волос
+						</h4>
+						<p>
+							Какие ассоциации вызывает у нас слово «волосы»? Красота, блеск, пышность, густота, длина, прическа и – здоровье. Красивые и здоровые волосы являются неотъемлемой частью привлекательного внешнего вида. Красота, конечно, понятие относительное, но большинство людей 
+							на уровне подсознания  оценивает  привлекательность человека с точки зрения одних и тех же факторов.  В том числе -  в поле зрения неизбежно попадают наши волосы и то, как мы их «носим».
+						</p>
+						<br>
+						<b>
+							Причины выпадения волос могут быть самыми разнообразными:
+						</b>
+						<ul>
+							<li>
+								общее состояние здоровья, стрессы
+							</li>
+							<li>
+								изменения гормонального фона 
+							</li>
+							<li>
+								несбалансированное питание
+							</li>
+							<li>
+								генетическая предрасположенность
+							</li>
+							<li>
+								неправильный уход
+							</li>
+						</ul>
+
+						<p>
+							Вне зависимости от причины -  потеря или уменьшение количества волос болезненно воспринимается человеком, ведь здоровые, густые, блестящие волосы – символ красоты и внешней привлекательности.
+						</p>
+
+						<b>
+							В этом  разделе можно  прочитать обо всем, что связано с волосами: 
+						</b>
+						<ul>
+							<li>
+								причины выпадения
+							</li>
+							<li>
+								правильный уход
+							</li>
+							<li>
+								оздоровление и стимулирование роста
+							</li>
+						</ul>
+
+						<p>
+							Надеемся, что данная информация будет вам интересна и полезна.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="read-also">
+					<h3 class="read-also__title">
+						Последние публикации
+					</h3>
+					<div class="row read-also__itemBlock">
+						<div class="col-sm-4">
+							<div class="read-also__item">
+								<h4 class="read-also__item__title">
+									<span>
+										Мифы об осеннем уходе за волосами
+									</span>
+								</h4>
+								<p>
+									В серии средства от интенсивного выпадения волос ALERANA® появилась новинка – сыворотка
+								</p>
+								<a href="problem_internal.html" class="read-also__link">
+									Читать подробнее
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="read-also__item">
+								<h4 class="read-also__item__title">
+									<span>
+										Правильное питание для волос
+									</span>
+								</h4>
+								<p>
+									Приглашаем пациентов с андрогенетической алопецией для участия в клиническом исследовании
+								</p>
+								<a href="" class="read-also__link">
+									Читать подробнее
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="read-also__item">
+								<h4 class="read-also__item__title">
+									<span>
+										Выпадение волос <br> на голове
+									</span>
+								</h4>
+								<p>
+									В серии средства от интенсивного выпадения волос ALERANA® появилась новинка – сыворотка
+								</p>
+								<a href="" class="read-also__link">
+									Читать подробнее
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

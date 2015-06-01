@@ -1,0 +1,189 @@
+.page {
+	padding: 20px 0 40px;
+}
+.page-content {
+	// padding: 15px 27px 25px;
+	padding: 15px 30px 25px;
+	background-color: #fff;
+}
+
+
+// было в .page-submenu
+.icon {
+	display: table-cell;
+	vertical-align: top;
+	width: 46px;
+	padding-top: 12px;
+	margin-right: 4px;
+	.sprite {
+		margin: auto;
+	}
+}
+
+	.page-submenu {
+		
+			
+			.submenu__link {
+				display: table;
+				width: 100%;
+				min-height: 48px;
+				text-decoration: none;
+				color: @text-color;
+				background-color: #fff;
+				border-bottom: 1px solid #e7e7e7;
+				transition: background-color 0.3s ease;
+				span {
+					display: table-cell;
+					vertical-align: middle;
+					padding: 12px 30px 12px 0;
+				}
+
+				&:hover {
+					background-color: @hover-button;
+					color: #fff;
+				}
+				&.active {
+					background-color: @active-button;
+					color: #fff;
+				}
+			}
+
+	}
+
+	.page-text {
+		h1{
+			color: @crimson;
+		}
+		h4 {
+			margin-bottom: 17px;
+			color: @crimson;
+		}
+		
+		ul {
+			margin-left: 43px;
+			margin-bottom: 15px;
+		}
+
+		li {
+			list-style-type: none;
+			padding-bottom: 7px;
+			text-indent: -14px;
+			&:before {
+			    content: "• ";
+			    color: #cfcfcf; 
+			    padding-right: 2px;
+			}
+		}
+		p{
+			line-height: 20px;
+		}
+
+		b {
+			font-family: 'latobold';
+			margin: 13px 0;
+			display: block;
+		}
+
+		a {
+			color: @crimson;
+			margin-bottom: 7px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.text-note {
+			font-family: 'latolight_italic';
+			border-top: 1px solid #ebebeb;
+			display: inline-block;
+			padding-top: 10px;
+			margin: 5px 0 10px;
+			line-height: 19px;
+		}
+		.text-warning {
+			font-family: 'heliosregular';
+			font-size: 24px;
+			color: #7d7d7d;
+			text-transform: uppercase;
+			line-height: 33px;
+			border-top: 1px solid #ebebeb;
+			margin: 19px 0 -14px;
+			padding-top: 13px;
+			span {
+				text-transform: none;
+			}
+		}
+	}
+		.page-text__lead-img {
+			margin-right: 25px;
+			margin-bottom: 25px;
+			float: left;
+		}
+		.page-text__sub-img {
+			margin-bottom: 25px;
+			width: 100%;
+		}
+
+
+	
+
+
+		.page-text__quotes,
+		.page-text__exclamation {
+			background-color: #f5f5f5;
+			// margin: 0 -27px;
+			margin: 20px -30px 35px;
+			position: relative;
+			line-height: 24px;
+
+			font-size: 16px;
+			padding: 35px 60px;
+			b {
+				color: @crimson;
+				font-size: 18px;
+				margin: 0;
+				display: inline-block;
+			}
+
+			&:before {
+				content: '';
+				width: 33px;
+				height: 33px;
+				display: inline-block;
+				position: absolute;
+				top: 26px;
+				left: 0;
+				z-index: 1;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 11px;
+				bottom: 11px;
+				left: 11px;
+				right: 11px;
+				border: 1px solid @body-bg;
+			}
+
+			a {
+				color: @crimson;
+				position: relative;
+				z-index: 1;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.page-text__quotes{
+			&:before {
+				background-image: url(/assets/images/icons/quotes.jpg);
+			}
+		}
+
+		.page-text__exclamation{
+			&:before {
+				background-image: url(/assets/images/icons/exclamation.jpg);
+			}
+		}

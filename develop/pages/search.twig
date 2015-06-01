@@ -1,0 +1,118 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/search.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-search">
+	<div class="wrap">
+		<div class="row">
+			<div class="col-sm-9">
+
+				<form action="" class="form-search-question">
+					<input type="text" class="search-question__input" placeholder="Поиск вопроса">
+					<button class="search-question__button"><i class="sprite sprite-search-question"></i></button>
+				</form>
+				<div class="loader hide">
+					<img src="/assets/images/loader.gif" alt="">
+				</div>
+				<p class="search-count hide">
+					<span>155</span> результатов
+				</p>
+
+				<div class="page-search__blocks hide">
+
+					<div class="search-block">
+						<a href="news-acsii_internal.html" class="search-block__title">
+							Новогоднее поздравление от ALERANA
+						</a>
+						<p class="search-block__text">
+							Сердечно поздравляем вас с Новым Годом!
+						</p>
+						<p class="search-block__link">
+							Раздел: <a href="news-acsii.html">Новости и акции</a>
+						</p>
+					</div>
+
+					<div class="search-block">
+						<a href="problem_internal.html" class="search-block__title">
+							Мифы об ALERANA
+						</a>
+						<p class="search-block__text">
+							Что входит в состав средств Alerana, основные механизмы воздействия и главные действующие компоненты средств серии
+						</p>
+						<p class="search-block__link">
+							Раздел: <a href="problem.html">О проблеме</a>
+						</p>
+					</div>
+
+					<div class="search-block">
+						<a href="news-acsii_internal.html" class="search-block__title">
+							Новогоднее поздравление от ALERANA
+						</a>
+						<p class="search-block__text">
+							Сердечно поздравляем вас с Новым Годом!
+						</p>
+						<p class="search-block__link">
+							Раздел: <a href="news-acsii.html">Новости и акции</a>
+						</p>
+					</div>
+
+					<div class="search-block">
+						<a href="problem_internal.html" class="search-block__title">
+							Мифы об ALERANA
+						</a>
+						<p class="search-block__text">
+							Что входит в состав средств Alerana, основные механизмы воздействия и главные действующие компоненты средств серии
+						</p>
+						<p class="search-block__link">
+							Раздел: <a href="problem.html">О проблеме</a>
+						</p>
+					</div>
+
+					<div class="search-block">
+						<a href="news-acsii_internal.html" class="search-block__title">
+							Новогоднее поздравление от ALERANA
+						</a>
+						<p class="search-block__text">
+							Сердечно поздравляем вас с Новым Годом!
+						</p>
+						<p class="search-block__link">
+							Раздел: <a href="news-acsii.html">Новости и акции</a>
+						</p>
+					</div>
+					
+				</div>
+
+
+
+				<div class="paginator hide">
+					<div class="paginator__prev dib">
+						<a href="" class="paginator__link">
+							Предыдущая
+						</a>
+					</div>
+					
+					<div class="paginator__number dib">
+						<a href="" class="paginator__link">1</a>
+						<a href="" class="paginator__link active">2</a>
+						<a href="" class="paginator__link">3</a>
+						<p class="dib">...</p>
+						<a href="" class="paginator__link">19</a>
+						<a href="" class="paginator__link">20</a>
+						<a href="" class="paginator__link">21</a>
+					</div>
+
+					<div class="paginator__next dib">
+						<a href="" class="paginator__link">
+							Следующая
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

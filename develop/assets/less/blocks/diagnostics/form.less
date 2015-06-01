@@ -1,0 +1,246 @@
+.diagnostics-wrap{
+	background-color: #fff;
+	padding: 27px 30px 25px;
+}
+.diagnostics-title {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+	.diagnostics-head {
+		font-size: 30px;
+		text-transform: uppercase;
+		color: @crimson;
+		margin: 0;
+		padding-bottom: 1px;
+	}
+
+	.form-lead {
+		font-size: 16px;
+		padding: 0;
+	}
+
+.diagnostics-form__content {
+	position: relative;
+	padding-top: 25px;
+}
+
+	.diagnostics-nav {
+		font-size: 0;
+		position: absolute;
+		width: calc(~"100% - 380px");
+		right: 0;
+	}
+
+		.diagnostics-nav-link {
+			display: inline-block;
+			vertical-align: top;
+			width: 16.2%;
+			height: 45px;
+			border-bottom: 8px solid #ebebeb;
+			margin-left: 2px;
+			font-size: 16px;
+			font-family: 'latobold';
+			text-decoration: none;
+			color: #d1d1d1;
+			position: relative;
+			cursor: default;
+			z-index: 2;
+			span {
+				position: relative;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: inline-block;
+				padding: 3px 0 0 7px;
+			}
+			&:after {
+				content: '';
+				height: 24px;
+				width: 24px;
+				background-color: #ebebeb;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline-block;
+			}
+			&.active{
+				color: #fff;
+				border-color: @crimson;
+				cursor: pointer;
+				&:after {
+					background-color: @crimson;
+				}
+			}
+		}
+
+
+.step {
+	position: relative;
+}
+	.step__img {
+		display: inline-block;
+		margin-right: 30px;
+		width: 343px;
+		height: 433px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.step__content {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(~"100% - 380px");
+	}
+		.step__question {
+			font-size: 18px;
+  			margin-top: 95px;
+  			margin-bottom: 28px;
+  			span {
+  				font-family: 'latolight';
+  				font-size: 14px;
+  				color: #a3a3a3;
+  			}
+		}
+
+		.step__answers {
+			font-family: 'latolight';
+			padding-left: 17px;
+		}
+			.step__answer {
+				padding-bottom: 20px;
+				input { display: none;}
+				label {
+					padding-left: 30px;
+					position: relative;
+					&:before {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						background-image: url(/assets/images/spritesheet.png);
+						left: 0;
+						width: 18px;
+						height: 18px;
+					}
+				}
+			}
+
+			.step__answer--radio{
+				label {
+					&:before {
+						background-position: -66px -2885px;
+					}
+				}
+				input[type=radio]:checked+label::before {
+					background-position: -66px -2919px;
+				}
+			}
+
+			.step__answer--checkdox{
+				label {
+					&:before {
+						background-position: -35px -2885px;
+						// background-position: -35px -2919px;
+					}
+				}
+				input[type=checkbox]:checked+label::before {
+					background-position: -35px -2919px;
+				}
+			}
+
+		.step__arrows {
+			position: absolute;
+			bottom: 0;
+			width: calc(~"100% - 380px");
+			right: 0;
+			border-top: 1px solid #d8d8d8;
+			padding-top: 20px;
+		}
+
+		.step__link {
+			text-decoration: none;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: #d1d1d1;
+			cursor: default;
+			transition: color 0.3s ease;
+			&.active {
+				color: @crimson;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+			.step__link--next {
+				float: right;
+				&:after {
+					content: '\e800';
+					font-family: "fontawesomelefticon";
+					font-size: 30px;
+					margin-left: 10px;
+					display: inline-block;
+					vertical-align: bottom;
+					line-height: 30px;
+				}
+			}
+
+			.step__link--prev {
+				&:before {
+					content: '\e803';
+					font-family: "fontawesomelefticon";
+					font-size: 30px;
+					margin-right: 10px;
+					display: inline-block;
+					vertical-align: bottom;
+					line-height: 30px;
+				}
+			}
+
+.form-submit-wrap {
+	padding-bottom: 0;
+	float: right;
+	margin-top: 6px;
+}
+	.form-submit {
+		text-decoration: none;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #d1d1d1;
+		transition: color 0.3s ease;
+
+		background-color: #fff;
+		border: none;
+		float: none;
+		font-family: 'latoregular';
+		cursor: default!important;
+		&.active {
+				color: @crimson;
+			cursor: pointer!important;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		&.active + .submit_after{
+			color: @crimson;
+		}
+	}
+
+	.submit_after {
+  		color: #d1d1d1;
+  		transition: color 0.3s ease;
+		&:after {
+			font-family: 'fontawesomelefticon';
+			content: '\e800';
+			font-size: 30px;
+			vertical-align: top;
+  			line-height: 17px;
+		}
+	}
+
+
+

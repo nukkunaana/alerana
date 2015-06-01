@@ -1,0 +1,146 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/faq-internal-genq.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-faq-internal">
+	<div class="wrap">
+		<div class="row">
+
+		{# submenu #}
+			<div class="col-sm-3">
+				<aside class="aside">
+					<form action="" class="js-form-aside form-aside form-aside--ask-question">
+						<h4 class="form-aside__title">
+							Задать Вопрос
+						</h4>
+						<p class="form-aside__required">
+							Все поля обязательны для заполнения
+						</p>
+						<div>
+							<input class="form-aside__input input-control input-name" type="text" placeholder="Имя">
+							<span class="js-validText"></span>
+						</div>
+						<div>
+							<input class="form-aside__input input-control input-mail" type="text" placeholder="E-mail">
+							<span class="js-validText"></span>
+						</div>
+						<div>
+							<textarea class="form-aside__textarea input-control" name="" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+							<span class="js-validText"></span>
+						</div>
+						<button class="aside-button form-aside__button">Отправить</button>
+					</form>
+					<a href="popup-message.html" class="js-popup-message"></a>
+				</aside>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+
+				<div class="row">
+					<div class="col-sm-7">
+						<form action="" class="form-search-question">
+							<input type="text" class="search-question__input" placeholder="Поиск вопроса">
+							<button class="search-question__button"><i class="sprite sprite-search-question"></i></button>
+						</form>
+					</div>
+
+					<div class="col-sm-5">
+
+						<div class="dropdown dropdown-on">
+					        <div class="dropdown-button">
+					          <span class="dropdown-button-title">
+					          	Перейти на другую тему
+					          </span>
+					          <i class="ico ico-arr-down dropdown-arr"></i>
+					        </div>
+					        <ul class="dropdown-menu">
+					          <li class="dropdown-menu-item" >
+					            <a href="faq_internal-general-questions.html" class="dropdown-menu-title">
+					            	Общие вопросы
+					            </a>
+					          </li>
+					          <li class="dropdown-menu-item">
+					            <a href="faq_internal.html" class="dropdown-menu-title">
+					            	Спреи для наружного применения 2 и 5%
+					            </a>
+					          </li>
+					          <li class="dropdown-menu-item">
+					            <a href="" class="dropdown-menu-title">
+					            	Сыворотка для роста волос
+					            </a>
+					          </li>
+					          <li class="dropdown-menu-item">
+					            <a href="" class="dropdown-menu-title">
+					            	Витаминно-минеральный комплекс
+					            </a>
+					          </li>
+					          <li class="dropdown-menu-item">
+					            <a href="faq_internal.html" class="dropdown-menu-title">
+					            	Средства для укрепления волос
+					            </a>
+					          </li>
+					          <li class="dropdown-menu-item">
+					            <a href="" class="dropdown-menu-title">
+					            	Шампуни, бальзам-ополаскиватель, маска
+					            </a>
+					          </li>
+					          <li class="dropdown-menu-item">
+					            <a href="" class="dropdown-menu-title">
+					            	Стимулятор роста ресниц и бровей
+					            </a>
+					          </li>
+					        </ul>
+					      </div>
+					</div>
+				</div>
+				
+
+
+
+				<div class="page-content">
+					<div class="page-text page-text--faq">
+						
+						<h1>
+							Показывает как работает переход по кастомному селекту. Работают только ссылки у "Общих вопросах", "Средствах для укрепления волос".
+						</h1>
+						
+					</div>
+				</div>
+				
+				
+
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

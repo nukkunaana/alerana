@@ -1,0 +1,213 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/catalog.twig' %}
+{% endblock %}
+
+{% block content %}
+  <div class="js-page page page-catalog">
+	<div class="wrap">
+		
+		<nav class="catalog-menu">
+			<a href="" class="catalog-menu__link active">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-all-product-g"></i>
+				</p>
+				
+				<p class="catalog-menu__text">
+					<span>
+						Вся продукия
+					</span>
+				</p>
+			</a>
+			<a href="" class="catalog-menu__link">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-fallout-g"></i>
+				</p>
+				<p class="catalog-menu__text">
+					<span>
+						При интенсивном выпадении
+					</span>
+				</p>
+			</a>
+			<a href="" class="catalog-menu__link">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-stronger-g"></i>
+				</p>
+				<p class="catalog-menu__text">
+					<span>
+						Укрепление волос
+					</span>
+				</p>
+			</a>
+			<a href="" class="catalog-menu__link">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-stimul-g"></i>
+				</p>
+				<p class="catalog-menu__text">
+					<span>
+						Стимулирование роста волос
+					</span>
+				</p>
+			</a>
+			<a href="" class="catalog-menu__link">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-feed-g"></i>
+				</p>
+				<p class="catalog-menu__text">
+					<span>
+						Интенсивное питание
+					</span>
+				</p>
+			</a>
+			<a href="" class="catalog-menu__link">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-grow-g"></i>
+				</p>
+				<p class="catalog-menu__text">
+					<span>
+						Для роста ресниц и бровей
+					</span>
+				</p>
+			</a>
+			<a href="" class="catalog-menu__link">
+				<p class="catalog-menu__icon">
+					<i class="sprite sprite-set-g"></i>
+				</p>
+				<p class="catalog-menu__text">
+					<span>
+						Наборы
+					</span>
+				</p>
+			</a>
+		</nav>
+
+		<div class="row">
+		{# submenu #}
+			<div class="col-sm-3 ">
+				<aside class="note">
+					<h4 class="note__title">
+						<span>Серия</span> ALERANA®
+					</h4>
+					<p>
+						Серия средств <b>ALERANA</b> разработана специально для лечения интенсивного выпадения волос и стимуляции их роста, а также укрепления и улучшения состояния ослабленных, склонных к выпадению волос.
+					</p>
+					<p>
+						Все средства бренда <b>ALERANA</b> являются негормональными и действуют в первую очередь на корни волос.
+					</p>
+				</aside>
+
+					<a href="consultation.html" class="aside-button">
+						<p class="icon">
+							<i class="sprite sprite-consultation"></i>
+						</p>
+						<span class="aside-button__text">
+							Консультация трихолога
+						</span>
+					</a>
+
+					<a href="diagnostics.html" class="aside-button">
+						<p class="icon">
+							<i class="sprite sprite-b-diagnostics"></i>
+						</p>
+						<span class="aside-button__text">
+							Диагностика волос
+						</span>
+					</a>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+
+				<div class="loader">
+					<img src="/assets/images/loader.gif" alt="">
+				</div>
+			
+				<div class="row catalog__products">
+						<a href="product-card.html" class="col-sm-4">
+							<p class="product-card">
+								<img src="/assets/images/product/catalog-1.png" alt="" class="product-card__img">
+								<span class="product-card__title">
+									Шампунь ALERANA для мужчин «Ежедневный уход»
+								</span>
+								<span class="product-card__type">
+									Укрепление волос
+								</span>
+							</p>							
+						</a>
+						<a href="" class="col-sm-4">
+							<p class="product-card">
+								<img src="/assets/images/product/catalog-2.png" alt="" class="product-card__img">
+								<span class="product-card__title">
+									Шампунь ALERANA для мужчин «Ежедневный уход»
+								</span>
+								<span class="product-card__type">
+									Укрепление волос
+								</span>
+							</p>							
+						</a>
+						<a href="" class="col-sm-4">
+							<p class="product-card">
+								<img src="/assets/images/product/catalog-3.png" alt="" class="product-card__img">
+								<span class="product-card__title">
+									Шампунь ALERANA для мужчин «Ежедневный уход»
+								</span>
+								<span class="product-card__type">
+									Укрепление волос
+								</span>
+							</p>							
+						</a>
+						<a href="" class="col-sm-4">
+							<p class="product-card">
+								<img src="/assets/images/product/catalog-4.png" alt="" class="product-card__img">
+								<span class="product-card__title">
+									Шампунь ALERANA для мужчин «Ежедневный уход»
+								</span>
+								<span class="product-card__type">
+									Укрепление волос
+								</span>
+							</p>							
+						</a>
+						<a href="" class="col-sm-4">
+							<p class="product-card">
+								<img src="/assets/images/product/catalog-5.png" alt="" class="product-card__img">
+								<span class="product-card__title">
+									Шампунь ALERANA для мужчин «Ежедневный уход»
+								</span>
+								<span class="product-card__type">
+									Укрепление волос
+								</span>
+							</p>							
+						</a>
+				</div>
+
+
+				<div class="sharing js-sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

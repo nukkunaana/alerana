@@ -1,0 +1,29 @@
+
+	.diagnostics-welcome__content {
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(~"100% - 380px");
+	}
+		.diagnostics-welcome__title {
+			font-size: 24px;
+		}
+
+		.diagnostics-welcome__text {
+			font-size: 18px;
+			margin: 25px 0 30px;
+		}
+
+		.diagnostics-welcome__button {
+			color: #fff;
+			font-size: 16px;
+			background-color: @crimson;
+			padding: 0 25px;
+			display: inline-block;
+			height: 48px;
+			line-height: 48px;
+			transition: background-color 0.3s ease; 
+			&:hover {
+				cursor: pointer;
+				background-color: @hover-button;
+			}
+		}

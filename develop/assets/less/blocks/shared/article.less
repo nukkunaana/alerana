@@ -1,0 +1,50 @@
+.article {
+	background-color: #fff;
+	height: 240px;
+	padding: 30px 33px;
+	position: relative;
+	margin-bottom: 20px;
+}
+	.article__img {
+		float: left;
+		margin-right: 55px;
+		height: 181px;
+		width: 181px;
+	}
+
+	.article__title{
+
+	}
+
+	.article__text {
+
+	}
+
+	.article__link {
+		position: absolute;
+		bottom: 27px;
+		font-family: 'latobold';
+		color: @text-color;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.article__time {
+		color: #a3a3a3;
+		font-family: 'latolight';
+		font-size: 12px;
+		padding: 0;
+
+		&:before {
+			font-family: "fontawesomelefticon";
+			content: '\e802';
+			margin-right: 4px;
+		}
+	}
+
+	.page-text .article__time {
+		font-size: 16px;
+		font-family: 'latoregular';
+	}

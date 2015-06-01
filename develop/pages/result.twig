@@ -1,0 +1,103 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/diagnostics.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-result">
+	<div class="wrap">
+
+		<div class="diagnostics-wrap">
+			<div class="diagnostics-title">				
+				<h1 class="diagnostics-head">
+					Результат Диагностики
+				</h1>
+				<a href="diagnostics.html">
+					Начать диагностику заново
+				</a>
+			</div>
+
+			<div class="result-content page-text">
+				<h4>
+					Вашим волосам нужна срочная помощь!
+				</h4>
+				<p>
+					Интенсивное выпадение волос могут провоцировать разные факторы: стрессы, несбалансированное питание, не правильный уход, андрогенная алопеция, хронические заболевания. Мы рекомендуем Вам обратиться к врачу-трихологу, чтобы он провел обследование и выявил причину выпадения волос. 
+				</p>
+				<b>
+					Оказать помощь волосам уже сегодня Вы можете, используя следующие средства:
+				</b>
+				<ul>
+					<li>
+						Для мужчин - спрей 5%, витаминно-минеральный комплекс, шампунь для мужчин активатор роста, бальзам-ополаскиватель
+					</li>
+					<li>
+						Для женщин – спрей 2% (для достижения более быстрого эффекта можно использовать спрей 5%), витаминно-минеральный комплекс, шампунь интенсивное питание, бальзам-ополаскиватель
+					</li>
+				</ul>
+			</div>
+
+
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+			<a href="product-card.html" class="col-sm-4">
+				<p class="product-card">
+					<img src="/assets/images/product/catalog-1.png" alt="" class="product-card__img">
+					<span class="product-card__title">
+						Шампунь ALERANA для мужчин «Ежедневный уход»
+					</span>
+					<span class="product-card__type">
+						Укрепление волос
+					</span>
+				</p>							
+			</a>
+
+
+
+			<div class="sharing">
+				<h5><span>Поделиться</span></h5>
+				<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+					<i class="sprite sprite-vk"></i>
+				</a>
+				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+					<i class="sprite sprite-fb"></i>
+				</a>
+				<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+					<i class="sprite sprite-tw"></i>
+				</a>
+				<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+					<i class="sprite sprite-ok"></i>
+				</a>
+				<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+					<i class="sprite sprite-mail"></i>
+				</a>
+				<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+					<i class="sprite sprite-google"></i>
+				</a>
+			</div>
+			
+		</div>		
+
+	</div>
+</div>
+{% endblock %}

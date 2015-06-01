@@ -1,0 +1,258 @@
+.page-index {
+	font-size: 0;
+	padding-top: 0;
+}
+
+
+
+
+.index-link {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	background-size: cover;
+  	background-position: center;
+  	// background-color: #d8adb7;
+
+	background-color: #fff;
+  	text-decoration: none;
+  	color: #fff;
+  	font-size: 14px;
+  	font-family: 'latolight';
+
+  	padding: 20px 30px;
+  	// transition: opacity 0.3s ease;
+	.sprite {
+		margin-bottom: 45px;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+}
+	.index-link__title {
+		text-transform: uppercase;
+		font-family: 'latoregular';
+	}
+
+.index-link--xxs {
+	height: 51px;
+}
+.index-link--xs {
+	height: 146px;
+}
+
+.index-link--sm {
+	height: 240px;
+}
+
+
+.index-link--md {
+	height: 300px;
+	.index-link__info {
+		height: 100px;
+		padding: 0 25px;
+	}
+}
+
+.index-link--lg {
+	height: 320px;
+}
+
+
+
+
+
+.bg-white {
+	position: absolute;
+	width: 93%;
+  	height: 92%;
+  	left: 3.5%;
+	background-color: #fff;
+}
+
+
+
+
+	.index-link--to-problem {
+		.index-link__title {
+			margin-bottom: 30px;
+		}
+	}
+
+
+	.index-link--to-consultation{
+		padding: 15px;
+		border: 1px solid  #959595;
+		.index-link__info {
+			background-color: rgba(255, 255, 255, 0.3);
+			height: 75px;
+			padding: 15px 0;
+			text-align: center;
+			color: @text-color;
+			.index-link__title {
+				margin: 0 0 5px ;
+				// font-size: 1.395em;
+				font-size: 19px;
+			}
+		}
+	}
+		.index-link__doc-img {
+			height: 133px;
+			width: 133px;
+			margin: auto;
+			border-radius: 50%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+	.index-link--to-diagnostics {
+		color: #fff;
+		background-color: @crimson;
+		.index-link__title {
+			margin-bottom: 30px;
+		}
+	}
+
+	.index-link--to-main-article {
+		margin-bottom: 1px;
+		color: #4c4c4c;
+
+		.index-link__info {
+			padding: 12px 30px;	
+		}
+		.index-link__title {
+			margin: 0;
+			line-height: 25px;
+		}
+	}
+
+	.index-link--to-article {
+		margin-bottom: 1px;
+		padding: 6px 27px;
+		// position: relative;
+		&.index-link--xxs {
+			.index-link--to-article__text {
+				font-family: 'latobold';
+				position: static;
+	  			line-height: 39px;
+			}
+		}
+	}
+		.index-link--to-article__title {
+			color: @crimson;
+			font-family: 'latoregular';
+
+			margin-bottom: 22px;
+		}
+		.index-link--to-article__text {
+			color: @dark-gray;
+			// position: absolute;
+			font-size: 14px;
+			// top: 85px;
+
+			
+		}
+
+			.index-link__info {
+				background-color: rgba(255, 255, 255, 0.5);
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+
+	.index-link--to-product {
+		color: @text-color;
+		display: table;
+		&:after {
+		  content: '';
+		  position: absolute;
+		  top: 11px;
+		  bottom: 11px;
+		  left: 11px;
+		  right: 11px;
+		  border: 1px solid #e7e7e7;
+		}
+	}
+		.index-link--to-product__text {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		.index-link--to-product__img {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+	.index-link--to-clinicalstudy {
+		text-align: center;
+		.index-link__info {
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
+	}
+
+	.index-link--to-acsii {
+		color: #4c4c4c;
+		.index-link__title {
+			margin-top: 15px;
+			margin-bottom: 11px;
+  			line-height: 24px;
+		}
+	}
+
+	.index-link--to-vervex {
+		padding-top: 19px;
+		text-align: center;
+		background-color: @crimson;
+		.index-link__title {
+			margin-bottom: 50px;
+		}
+		a {
+			color: #fff;			
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.index-link--to-vervex a,
+	.index-link--to-vervexclub a {
+		font-family: 'latobold';
+		text-decoration: none;
+		position: absolute;
+		bottom: 21px;
+		left: 0;
+		right: 0;
+	}
+
+	.index-link--to-vervexclub {
+		padding: 19px 20px 0;
+		color: @text-color;
+		background-image: url(/assets/images/index/bg/club.jpg);
+		background-repeat: no-repeat;
+  		background-size: inherit;
+		background-position: 100% 100%;
+		.index-link__title {
+			margin-bottom: 35px;
+		}
+		p {
+			line-height: 22px;
+		}
+		a {
+			left: 20px;
+			color: @text-color;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}

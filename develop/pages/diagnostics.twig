@@ -1,0 +1,234 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/diagnostics.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-diagnostics">
+	<div class="wrap">
+
+		<div class="diagnostics-wrap js-welcome">
+			<div class="diagnostics-title">				
+				<h1 class="diagnostics-head">
+					Диагностика волос
+				</h1>
+			</div>
+			<div class="diagnostics-form__content">
+				<div class="step__img">
+					<img src="/assets/images/diagnostic/well.jpg" alt="">
+				</div>
+				<div class="diagnostics-welcome__content">
+					<h2 class="diagnostics-welcome__title">
+						Добро пожаловать на диагностику волос
+					</h2>
+					<p class="diagnostics-welcome__text">
+						Ответьте на несколько вопросов и узнайте о том, что подходит вашим волосам и коже головы
+					</p>
+					<p class="diagnostics-welcome__button">
+						Начать диагностику
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<form action="/result.html" class="diagnostics-wrap js-form hide">
+			<div class="diagnostics-title">				
+				<h1 class="diagnostics-head">
+					Диагностика волос
+				</h1>
+				<p class="form-lead">
+					Ответьте на несколько вопросов и узнайте о том, что подходит вашим волосам и коже головы
+				</p>
+			</div>
+			<div class="diagnostics-form__content">
+				<nav class="diagnostics-nav">
+					<a class="diagnostics-nav-link active" href="#step1"><span>1</span></a>
+					<a class="diagnostics-nav-link" href="#step2"><span>2</span></a>
+					<a class="diagnostics-nav-link" href="#step3"><span>3</span></a>
+					<a class="diagnostics-nav-link" href="#step4"><span>4</span></a>
+					<a class="diagnostics-nav-link" href="#step5"><span>5</span></a>
+					<a class="diagnostics-nav-link" href="#step6"><span>6</span></a>
+				</nav>
+				<div id="step1" class="step active">
+					<div class="step__img">
+						<img src="/assets/images/diagnostic/1.jpg" alt="">
+					</div>
+					<div class="step__content">
+						<p class="step__question">
+							Укажите, пожалуйста, ваш пол
+						</p>
+						<div class="step__answers">
+							<p class="step__answer step__answer--radio">
+							    <input id="male" name="sex" type="radio" value="male" required>
+							    <label for="male">Мужской</label>
+						  	</p>
+						  	<p class="step__answer step__answer--radio">
+							    <input id="female" name="sex" type="radio" value="female" required>
+							    <label for="female">Женский</label>
+						  	</p>
+						</div>
+						<div class="step__arrows">
+							<a class="step__link step__link--next" href="#step2">Далее</a>	
+						</div>					
+					</div>
+				</div>
+				<div id="step2" class="step hide">
+					<div class="step__img">
+						<img src="/assets/images/diagnostic/4.jpg" alt="">
+					</div>
+					<div class="step__content">
+						<p class="step__question">
+							Выпадают ли у Вас волосы?
+						</p>
+						<div class="step__answers">
+							<p class="step__answer step__answer--radio">
+							    <input id="no" name="hair_fall" type="radio" value="no" required>
+							    <label for="no">Немного или не выпадают вовсе</label>
+						  	</p>
+						  	<p class="step__answer step__answer--radio">
+							    <input id="yes" name="hair_fall" type="radio" value="yes" required>
+							    <label for="yes">Выпадают</label>
+						  	</p>
+						  	<p class="step__answer step__answer--radio">
+							    <input id="alot" name="hair_fall" type="radio" value="alot" required>
+							    <label for="alot">Активно выпадают</label>
+						  	</p>
+						</div>
+						<div class="step__arrows">
+							<a class="step__link  step__link--prev active" href="#step1">Назад</a>	
+							<a class="step__link  step__link--next" href="#step3">Далее</a>	
+						</div>	
+					</div>
+				</div>
+				<div id="step3" class="step hide">
+					<div class="step__img">
+						<img src="/assets/images/diagnostic/1.jpg" alt="">
+					</div>
+					<div class="step__content">
+						<p class="step__question">
+							Сталкивались ли Вы в течении последних 3-х месяцев со следующими состояниями?
+							<span> (Можно выбрать несколько пунктов)</span>
+						</p>
+						<div class="step__answers">
+							<p class="step__answer step__answer--checkdox">
+							    <input id="stress" name="health" type="checkbox" value="stress">
+							    <label for="stress">Сильный стресс</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="drugs" name="health" type="checkbox" value="drugs">
+							    <label for="drugs">Прием гормональных препаратов, антибиотиков</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="diet" name="health" type="checkbox" value="diet">
+							    <label for="diet">Несбалансированная диета, голодание</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="pregnant" name="health" type="checkbox" value="pregnant">
+							    <label for="pregnant">В настоящий момент я – беременна, кормлю грудью</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="not" name="health" type="checkbox" value="not">
+							    <label for="not">Не сталкивался (-лась)</label>
+						  	</p>
+						</div>
+						<div class="step__arrows">					
+							<a class="step__link  step__link--prev active" href="#step2">Назад</a>
+							<a class="step__link  step__link--next active" href="#step4">Далее</a>	
+						</div>
+					</div>
+				</div>
+				<div id="step4" class="step hide">
+					<div class="step__img">
+						<img src="/assets/images/diagnostic/4.jpg" alt="">
+					</div>
+					<div class="step__content">
+						<p class="step__question">
+							Какие из нижеуказанных манипуляций Вы регулярно проводите с волосами?
+							<span> (Можно выбрать несколько пунктов)</span>
+						</p>
+						<div class="step__answers">
+							<p class="step__answer step__answer--checkdox">
+							    <input id="coloring" name="hairdo" type="checkbox" value="coloring" >
+							    <label for="coloring">Окрашиваю</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="usefen" name="hairdo" type="checkbox" value="usefen" >
+							    <label for="usefen">Сушу феном, укладываю феном и плойкой</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="tight" name="hairdo" type="checkbox" value="tight">
+							    <label for="tight">Укладываю волосы в тугие прически</label>
+						  	</p>
+						  	<p class="step__answer step__answer--checkdox">
+							    <input id="nohairdo" name="hairdo" type="checkbox" value="nohairdo">
+							    <label for="nohairdo">Никаких</label>
+						  	</p>
+						</div>
+						<div class="step__arrows">
+							<a class="step__link  step__link--prev active" href="#step3">Назад</a>
+							<a class="step__link  step__link--next active" href="#step5">Далее</a>
+						</div>					
+					</div>
+				</div>
+				<div id="step5" class="step hide">
+					<div class="step__img">
+						<img src="/assets/images/diagnostic/1.jpg" alt="">
+					</div>
+					<div class="step__content">
+						<p class="step__question">
+							Как часто после мытья волосы становятся грязными?
+						</p>
+						<div class="step__answers">
+							<p class="step__answer step__answer--radio">
+							    <input id="1day" name="messy_hair" type="radio" value="1day" required>
+							    <label for="1day">Через 1 день</label>
+						  	</p>
+						  	<p class="step__answer step__answer--radio">
+							    <input id="2days" name="messy_hair" type="radio" value="2days" required>
+							    <label for="2days">Через 2-3 дня</label>
+						  	</p>
+						  	<p class="step__answer step__answer--radio">
+							    <input id="3days" name="messy_hair" type="radio" value="3days" required>
+							    <label for="3days">Более чем за 3 дня</label>
+						  	</p>
+						</div>
+						<div class="step__arrows">
+							<a class="step__link step__link--prev active" href="#step4">Назад</a>
+							<a class="step__link step__link--next" href="#step6">Далее</a>
+						</div>					
+					</div>
+				</div>
+				<div id="step6" class="step hide">
+					<div class="step__img">
+						<img src="/assets/images/diagnostic/1.jpg" alt="">
+					</div>
+					<div class="step__content">
+						<p class="step__question">
+							Обнаруживали ли Вы когда-нибудь перхоть в своих волосах, на плечах, на одежде?
+						</p>
+						<div class="step__answers">
+						  	<p class="step__answer step__answer--radio">
+							    <input id="rarely" name="dandruff" type="radio" value="rarely" required>
+							    <label for="rarely">Редко, не обнаруживал(а)</label>
+						  	</p>
+						  	<p class="step__answer step__answer--radio">
+							    <input id="often" name="dandruff" type="radio" value="often" required>
+							    <label for="often">Часто, регулярно</label>
+						  	</p>
+						</div>
+						<div class="step__arrows">
+							<a class="step__link step__link--prev active" href="#step4">Назад</a>
+							<p class="form-submit-wrap">
+								<input class="step__link--next form-submit js-form__submit" type="submit" value="Завершить">
+								<span class="submit_after"></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

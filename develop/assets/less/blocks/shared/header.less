@@ -1,0 +1,70 @@
+.site-header {
+	position: relative;
+	&:before{
+		position: absolute;
+		top: 0;
+		z-index: 0;
+		content: '';
+		background-image: url(/assets/images/bg/bg-header.jpg);
+		background-position: center;
+		height: 100%;
+		width: 100%;
+	}
+}
+.header-top {
+	position: relative;
+	z-index: 3;
+	background-color: rgba(255, 255, 255, 0.6);
+	.wrap {
+		padding: 25px 0 0;
+	}
+}
+	.header__hot-phone {
+		width: 200px;
+		text-align: left;
+	}
+		.hot-phone-number {
+			color: @dark-gray;
+			text-decoration: none;
+			font-family: 'latobold';
+			font-size: 24px;
+		}
+
+	.header__logo {
+		margin-top: -5px;
+	}
+
+	.header__search {
+		form{
+			height: 25px;
+			width: 200px;
+			padding-top: 5px;
+			border-bottom: 1px solid @dark-gray;
+			position: relative;
+		}
+	}
+			.header__search-input {
+				background-color: transparent;
+				border: 0;
+				text-overflow:ellipsis;
+				outline: none;
+				width: 175px;
+				&::-webkit-input-placeholder {
+					color:@dark-gray;
+					opacity: 1;
+					transition: opacity 0.3s ease;
+				}
+				&:focus::-webkit-input-placeholder {
+					opacity: 0;
+				}
+			}
+
+
+			.header__search-button {
+				display: inline-block;
+				background-color: transparent;
+				border: 0;
+				outline: none;
+				position: absolute;
+				right: 0;
+			}

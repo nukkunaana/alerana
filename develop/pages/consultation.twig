@@ -1,0 +1,247 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/consultation.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-consultation">
+	<div class="wrap">
+		<div class="row">
+
+		{# submenu #}
+			<div class="col-sm-3">
+				<aside class="aside">
+					<form action="" class="js-form-aside form-aside form-aside--ask-question">
+						<h4 class="form-aside__title">
+							Задать Вопрос
+						</h4>
+						<p class="form-aside__required">
+							Все поля обязательны для заполнения
+						</p>
+						<div>
+							<input class="form-aside__input input-control input-name" type="text" placeholder="Имя">
+							<span class="js-validText"></span>
+						</div>
+						<div>
+							<input class="form-aside__input input-control input-mail" type="text" placeholder="E-mail">
+							<span class="js-validText"></span>
+						</div>
+						<div>
+							<textarea class="form-aside__textarea input-control" name="" id="" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+							<span class="js-validText"></span>
+						</div>
+						<button class="aside-button form-aside__button">Отправить</button>
+					</form>
+					<a href="popup-message.html" class="js-popup-message"></a>
+				</aside>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+
+				<div class="page-text">					
+					<div class="consultation-lead-in">
+						<div class="consultation-lead-in__triholog">
+							<div class="triholog-img">
+								<img src="/assets/images/index/triholog.jpg" alt="">
+							</div>
+							<div class="triholog-about">
+								<h4>
+									Меньщикова <br> Галина Владимировна 
+								</h4>
+								<p>
+									Врач дерматовенеролог, трихолог, кандидат медицинских наук,<br> член Общества трихологии
+								</p>
+							</div>
+						</div>
+						<div class="consultation-lead-in__topic">
+							<p class="topic">
+								Тема консультации
+							</p>
+							<h4>
+								Выпадения волос: профилактика и лечение
+							</h4>
+							<p>
+								Сильные, густые волосы – мечта каждой женщины! Да и многих мужчин. Между тем, по статистике, 96% мужчин и 79% женщин сталкиваются с проблемой повышенного выпадения волос. Норма для естественного физиологического выпадения волос – 50-80 волос в день. При потере 100 и более волос речь идет об интенсивном выпадении!
+							</p>
+							<br>
+							<p>
+								Предалагаем Вам задать все интересующие Вас вопросы о проблеме выпадения волос специалисту -трихологу Меньщиковой Галине Владмировне. В 2003 году Галина Владимировна закончила Московскую медицинскую академию им.И.М.Сеченова по специальности «Лечебное дело». С сентября 2005г. по настоящее время она является ассистентом кафедры дерматовенерологии и дерматоонкологии ФУВ ГУ МОНИКИ им.М.Ф.Владимирского.
+							</p>
+						</div>
+						<div class="page-text__exclamation">
+							<b>Внимание! </b> Специалист отвечает только на вопросы, относящиеся к теме консультации. Прочие вопросы вы можете задать специалисту компании «ВЕРТЕКС» в разделе <a href="faq.html">«Вопросы и ответы»</a>
+						</div>
+					</div>
+
+					<div class="faq-block">
+						<div class="faq-block__question">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Елена
+							</h4>
+							<p>
+								Добрый день! Читая вопросы по бальзаму-спрею у меня закрался вопрос. Как так, в феврале 2012 года вы мужчине отвечаете, что основной компонент спрея был заменен на миноксидил (был пинацедил). А в декабре 2012 женщине отвечаете, что действующее вещество бальзама-спрея - пинацидил. Я не поняла этот момент. Так все же какое? 
+							</p>						
+						</div>
+
+						<div class="faq-block__answer">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Меньщикова Галина Владимировна 
+								<p>Врач дерматовенеролог, трихолог, кандидат медицинских наук, член Общества трихологии</p>
+							</h4>
+							<p>
+								Добрый день! Возможно, у какого-то из этих ответов стоит неверная дата. В действительности ранее компонентом бальзама-спрея был пинацидил. В настоящее время средство называется «спрей для наружного применения», и действующее вещество этого препарата - миноксидил. На сайте есть информация о замене позиций: <a href="">http://alerana.ru/news/5721/</a>
+							</p>						
+						</div>					
+					</div>
+
+					<div class="faq-block">
+						<div class="faq-block__question">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Александр
+							</h4>
+							<p>
+								Почему Бальзам-спрей ALERANA для мужчин не могу найти в аптеках ? Он снят с производства ?
+							</p>						
+						</div>
+
+						<div class="faq-block__answer">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Меньщикова Галина Владимировна 
+								<p>Врач дерматовенеролог, трихолог, кандидат медицинских наук, член Общества трихологии</p>
+							</h4>
+							<p>
+								Здравствуйте! Благодарим Вас за лояльность к серии ALERANA! Да, произошла замена позиций - теперь в серии ALERANA выпускается Спрей для наружного применения на основе миноксидила. Миноксидил, как и действующее вещество косметического средства ALERANA бальзам-спрей относится к группе активаторов калиевых каналов, механизм действия и эффективность веществ этой группы сходны
+							</p>						
+						</div>					
+					</div>
+
+					<div class="faq-block">
+						<div class="faq-block__question">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Елена
+							</h4>
+							<p>
+								Добрый день! Читая вопросы по бальзаму-спрею у меня закрался вопрос. Как так, в феврале 2012 года вы мужчине отвечаете, что основной компонент спрея был заменен на миноксидил (был пинацедил). А в декабре 2012 женщине отвечаете, что действующее вещество бальзама-спрея - пинацидил. Я не поняла этот момент. Так все же какое? 
+							</p>						
+						</div>
+
+						<div class="faq-block__answer">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Меньщикова Галина Владимировна 
+								<p>Врач дерматовенеролог, трихолог, кандидат медицинских наук, член Общества трихологии</p>
+							</h4>
+							<p>
+								Добрый день! Возможно, у какого-то из этих ответов стоит неверная дата. В действительности ранее компонентом бальзама-спрея был пинацидил. В настоящее время средство называется «спрей для наружного применения», и действующее вещество этого препарата - миноксидил. На сайте есть информация о замене позиций: <a href="">http://alerana.ru/news/5721/</a>
+							</p>						
+						</div>					
+					</div>
+
+					<div class="faq-block">
+						<div class="faq-block__question">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Александр
+							</h4>
+							<p>
+								Почему Бальзам-спрей ALERANA для мужчин не могу найти в аптеках ? Он снят с производства ?
+							</p>						
+						</div>
+
+						<div class="faq-block__answer">
+							<p class="article__time">
+								22 ноября 2015 в 12:45
+							</p>
+							<h4 class="faq-block__messenger-name">
+								Меньщикова Галина Владимировна 
+								<p>Врач дерматовенеролог, трихолог, кандидат медицинских наук, член Общества трихологии</p>
+							</h4>
+							<p>
+								Здравствуйте! Благодарим Вас за лояльность к серии ALERANA! Да, произошла замена позиций - теперь в серии ALERANA выпускается Спрей для наружного применения на основе миноксидила. Миноксидил, как и действующее вещество косметического средства ALERANA бальзам-спрей относится к группе активаторов калиевых каналов, механизм действия и эффективность веществ этой группы сходны
+							</p>						
+						</div>					
+					</div>
+					
+				</div>
+
+
+				
+				
+
+				<div class="paginator">
+					<div class="paginator__prev dib">
+						<a href="" class="paginator__link">
+							Предыдущая
+						</a>
+					</div>
+					
+					<div class="paginator__number dib">
+						<a href="" class="paginator__link">1</a>
+						<a href="" class="paginator__link active">2</a>
+						<a href="" class="paginator__link">3</a>
+						<p class="dib">...</p>
+						<a href="" class="paginator__link">19</a>
+						<a href="" class="paginator__link">20</a>
+						<a href="" class="paginator__link">21</a>
+					</div>
+
+					<div class="paginator__next dib">
+						<a href="" class="paginator__link">
+							Следующая
+						</a>
+					</div>
+				</div>
+				
+
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

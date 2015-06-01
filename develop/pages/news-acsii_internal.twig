@@ -1,0 +1,142 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/news-acsii-internal.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-news-acsii-internal">
+	<div class="wrap">
+		<div class="row">
+
+		{# submenu #}
+			<div class="col-sm-3 page-submenu">
+
+				<div class="email-delivery">
+					<h4>
+						<span>Email</span> рассылка
+					</h4>
+					<p class="email-delivery__text">
+						Получайте новые релизы и акции прямо <br>
+						на почтовый ящик.
+					</p>
+					<form action="" class="email-delivery__form">
+						<input class="email-delivery__input input-mail input-control" type="text" placeholder="E-mail">
+						<p class="js-validText validText"></p>
+						<button class="email-delivery__submit">Подписаться</button>	
+					</form>
+				</div>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+				<div class="page-content">
+					<div class="page-text">
+						<p class="article__time">
+							22 ноября 2015
+						</p>
+						<h1>
+							Подведены итоги конкурса «Праздничный образ вместе с ALERANA»!
+						</h1>
+						<br>
+						<p>
+							Конкурс "Праздничный образ вместе с ALERANA" подошел к концу. Благодарим все участников конкурса за креативные, неординарные работы, а также всех тех, кто голосовал за понравившиеся фотографии.
+						</p>
+						<br>
+						<p>
+							Приглашаем вас ознакомиться с результатами конкурса, а заодно и выбрать для себя праздничный образ.
+						</p>
+						<br>
+						<p>
+							Итоги конкурса опубликованы здесь: <a href="" class="dib">alerana.ru/contests/image/results/</a>
+						</p>
+						<img src="/assets/images/uu.jpg" alt="" class="page-text__sub-img">
+					</div>
+				</div>
+				
+				<div class="read-also">
+					<h3 class="read-also__title">
+						Читайте также
+					</h3>
+					<div class="row read-also__itemBlock">
+						<div class="col-sm-4">
+							<div class="read-also__item">
+								<h4 class="read-also__item__title">
+									<span>
+										Этой зимой в Клубе «ВЕРТЕКС» - пора кроссвордов!
+									</span>
+								</h4>
+								<p>
+									В серии средства от интенсивного выпадения волос ALERANA® появилась новинка – сыворотка
+								</p>
+								<a href="problem_internal.html" class="read-also__link">
+									Читать подробнее
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="read-also__item">
+								<h4 class="read-also__item__title">
+									<span>
+										Новогоднее поздравление от ALERANA
+									</span>
+								</h4>
+								<p>
+									Приглашаем пациентов с андрогенетической алопецией для участия в клиническом исследовании
+								</p>
+								<a href="" class="read-also__link">
+									Читать подробнее
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="read-also__item">
+								<h4 class="read-also__item__title">
+									<span>
+										Обновления в линейке шампуней ALERANA
+									</span>
+									
+								</h4>
+								<p>
+									В серии средства от интенсивного выпадения волос ALERANA® появилась новинка – сыворотка
+								</p>
+								<a href="" class="read-also__link">
+									Читать подробнее
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

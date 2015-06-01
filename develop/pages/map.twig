@@ -1,0 +1,89 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/map.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-map">
+	<div class="wrap">
+
+		<div id="map" class="map" data-x="59.93437646673723" data-y="30.336685180664062" data-zoom="10" data-places="[ [59.93437646673723,30.336685180664062] , [59.93437646673723,30.406685180664062] , [60.0,30.406685180664062] ]">
+		</div>
+
+
+		<div class="row">
+
+		{# submenu #}
+			<div class="col-sm-3">
+				<aside class="aside">
+					
+				</aside>
+			</div>
+			{# end submenu #}
+			
+			{# content #}
+			<div class="col-sm-9">
+
+				
+					
+
+
+				
+				
+
+				<div class="paginator">
+					<div class="paginator__prev dib">
+						<a href="" class="paginator__link">
+							Предыдущая
+						</a>
+					</div>
+					
+					<div class="paginator__number dib">
+						<a href="" class="paginator__link">1</a>
+						<a href="" class="paginator__link active">2</a>
+						<a href="" class="paginator__link">3</a>
+						<p class="dib">...</p>
+						<a href="" class="paginator__link">19</a>
+						<a href="" class="paginator__link">20</a>
+						<a href="" class="paginator__link">21</a>
+					</div>
+
+					<div class="paginator__next dib">
+						<a href="" class="paginator__link">
+							Следующая
+						</a>
+					</div>
+				</div>
+				
+
+
+				<div class="sharing">
+					<h5><span>Поделиться</span></h5>
+					<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+						<i class="sprite sprite-vk"></i>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+						<i class="sprite sprite-fb"></i>
+					</a>
+					<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+						<i class="sprite sprite-tw"></i>
+					</a>
+					<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+						<i class="sprite sprite-ok"></i>
+					</a>
+					<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+						<i class="sprite sprite-mail"></i>
+					</a>
+					<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+						<i class="sprite sprite-google"></i>
+					</a>
+				</div>
+
+			</div>
+			{# end content #}
+		</div>
+	</div>
+</div>
+{% endblock %}

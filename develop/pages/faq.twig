@@ -1,0 +1,109 @@
+{% set images = '/assets/images' %}
+{% extends "layouts/layout.twig" %}
+
+{% block breadCrumbs %}
+	{% include 'include/breadCrumbs/faq.twig' %}
+{% endblock %}
+
+{% block content %}
+<div class="js-page page page-faq">
+	<div class="wrap">
+		<div class="row">
+
+			{# question #}
+			<div class="col-sm-8">
+				<form action="" class="form-search-question">
+					<input type="text" class="search-question__input" placeholder="Поиск вопроса">
+					<button class="search-question__button"><i class="sprite sprite-search-question"></i></button>
+				</form>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="ask_question.html" class="ask-question js-ask-question">
+					Задать вопрос
+				</a>
+			</div>
+			{# end question #}
+
+			{# content #}
+			<div class="col-sm-6">
+				<a href="faq_internal-general-questions.html" class="topic-of-question">
+					<div class="topic-of-question__img">
+						<img src="/assets/images/faq/bg-1.jpg" alt="">
+					</div>
+										
+					<h4 class="topic-of-question__title">
+						Общие вопросы
+					</h4>
+					<p class="topic-of-question__brief">
+						Где купить. Доставка товаров. Участие в конкурсах. «Вертекс»-клуб.
+					</p>
+				</a>
+			</div>
+
+			<div class="col-sm-6">
+				<a href="faq_internal.html" class="topic-of-question">
+					<div class="topic-of-question__img">
+						<img src="/assets/images/faq/product-1.png" alt="">
+					</div>
+										
+					<h4 class="topic-of-question__title">
+						Средства для укрепления волос
+					</h4>
+					<p class="topic-of-question__brief">
+						Состав, активные компоненты,<br>
+						способ применения
+
+					</p>
+				</a>
+			</div>
+
+			<div class="col-sm-6">
+				<a href="" class="topic-of-question">
+					<div class="topic-of-question__img">
+						<img src="/assets/images/faq/product-2.png" alt="">
+					</div>
+										
+					<h4 class="topic-of-question__title">
+						Спреи для наружного применения 2 и 5% ALERANA®
+					</h4>
+					<p class="topic-of-question__brief">
+						Рекомендации по применению, <br>длительность курса 
+					</p>
+				</a>
+			</div>
+
+			
+
+
+
+
+			{# end content #}
+		</div>
+		{# end row #}
+
+
+		<div class="sharing">
+				<h5><span>Поделиться</span></h5>
+				<a target="_blank" href="http://vkontakte.ru/share.php?url=http://alerana.ru/" class="sharing-link sharing-link--vk">
+					<i class="sprite sprite-vk"></i>
+				</a>
+				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://alerana.ru/" class="sharing-link sharing-link--fb">
+					<i class="sprite sprite-fb"></i>
+				</a>
+				<a target="_blank" href="https://twitter.com/intent/tweet?source=http://alerana.ru/" class="sharing-link sharing-link--tw">
+					<i class="sprite sprite-tw"></i>
+				</a>
+				<a target="_blank" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=http://alerana.ru/" class="sharing-link sharing-link--ok">
+					<i class="sprite sprite-ok"></i>
+				</a>
+				<a target="_blank" href="http://connect.mail.ru/share?url=http://alerana.ru/" class="sharing-link sharing-link--mail">
+					<i class="sprite sprite-mail"></i>
+				</a>
+				<a target="_blank" href="https://plus.google.com/share?url=http://alerana.ru/" class="sharing-link sharing-link--google">
+					<i class="sprite sprite-google"></i>
+				</a>
+			</div>
+	</div>
+</div>
+{% endblock %}
